@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="css/index.css">
+<script src="js/index.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<div class="captcha-container">
+    <div class="captcha-box">
+        <div class="checkbox-wrapper">
+            <input type="checkbox" id="not-a-robot" onclick="openCaptchaModal()">
+            <label for="not-a-robot">No soy un <strong>Vampiro</strong></label>
+        </div>
+        <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" width="30">
+    </div>
+</div>
+
+<div id="captchaModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <p>Selecciona todas las imágenes de</p>
+            <strong>Nuestros momentos bonitos</strong>
+        </div>
+        <div class="image-grid">
+            <img src="img/foto01.jpg" onclick="toggleSelect(this)">
+            <img src="img/foto02.jpg" onclick="toggleSelect(this)">
+            <img src="img/foto03.jpg" onclick="toggleSelect(this)">
+            <img src="img/foto04.jpg" onclick="toggleSelect(this)">
+            <img src="img/foto05.jpg" onclick="toggleSelect(this)">
+            <img src="img/foto06.jpg" onclick="toggleSelect(this)">
+            <img src="img/foto07.jpg" onclick="toggleSelect(this)">
+            <img src="img/foto08.jpg" onclick="toggleSelect(this)">
+            <img src="img/foto09.jpg" onclick="toggleSelect(this)">
+        </div>
+        <div class="modal-footer">
+            <button onclick="verifyCaptcha()">VERIFICAR</button>
+        </div>
+    </div>
+</div>
