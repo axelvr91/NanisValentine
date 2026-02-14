@@ -6,7 +6,7 @@
 
 :root {
     --primary: #fff;
-    --bg-color: #F4F3DF; /* Soft pink background */
+    --bg-color: #F4F3DF;
     --bg-envelope-color: #d0ffcc; /* Light pink envelope */
     --envelope-tab: #d0ffcc; /* Darker pink tab */
     --envelope-cover: #8dd396; /* Medium pink cover */
@@ -16,7 +16,11 @@
 }
 
 body {
-    background: var(--bg-color);
+    background-image: url('../img/BackgroundFlowers.png');
+        background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +65,7 @@ h1 {
     border-right: 300px solid transparent;
     border-left: 300px solid transparent;
     transform-origin: top;
-    transition: all 0.5s ease-in-out 0.7s;
+    transition: all 0.4s ease-in-out 0.7s;
     border-radius: 10px;
 }
 
@@ -135,7 +139,7 @@ h1 {
     height: 30px;
     background: var(--heart-color);
     transform: translate(-50%, 0%) rotate(45deg);
-    transition: transform 0.5s ease-in-out 1s;
+    transition: transform 0.3s ease-in-out 1s;
     box-shadow: 0 1px 6px var(--shadow-color);
     cursor: pointer;
     z-index: 999;
