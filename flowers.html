@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/flowers.css">
-    <title>Carta de </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Para mi Nana </title>
 </head>
 <body>
     <h1>Feliz San Valentín Nana :)</h1>
@@ -40,7 +41,29 @@
             <div class="tap-left"></div>
         </div>
     </div>
+
+
+    <div class="music-player">
+    <audio id="musica-valentine" loop>
+        <source src="sound/cancion.mp3" type="audio/mpeg">
+    </audio>
     
+    <div class="controls-row">
+        <button id="btn-musica" class="control-btn">
+        <span id="icon-musica" class="material-symbols-outlined">play_arrow</span>
+        </button>
+        <div id="visualizer" class="visualizer">
+            <span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+    
+    <div class="volume-container">
+        <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.8">
+    </div>
+</div>
+
+
+
     <script src="/js/flowers.js"></script>
 </body>
 </html>
